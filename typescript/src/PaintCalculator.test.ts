@@ -8,7 +8,7 @@ describe('PaintCalculator', () => {
         const rectangle = new Rectangle(5, 10);
         const expectedResult = 5;
 
-        const actualResult = PaintCalculator.calculatePaintRequiredForRectangle(rectangle);
+        const actualResult = PaintCalculator.calculatePaintRequired(rectangle);
 
         expect(actualResult).toEqual(expectedResult);
     });
@@ -17,7 +17,7 @@ describe('PaintCalculator', () => {
         const square = new Square(5);
         const expectedResult = 2.5;
 
-        const actualResult = PaintCalculator.calculatePaintRequiredForSquare(square);
+        const actualResult = PaintCalculator.calculatePaintRequired(square);
 
         expect(actualResult).toEqual(expectedResult);
     });
@@ -26,7 +26,7 @@ describe('PaintCalculator', () => {
         const circle = new Circle(5);
         const expectedResult = 7.85;
 
-        const actualResult = PaintCalculator.calculatePaintRequiredForCircle(circle);
+        const actualResult = PaintCalculator.calculatePaintRequired(circle);
 
         expect(actualResult).toBeCloseTo(expectedResult, 2);
     });
